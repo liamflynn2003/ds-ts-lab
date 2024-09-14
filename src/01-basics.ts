@@ -3,7 +3,14 @@ interface Friend {
     phone: string;
     age: number
 }
-
+interface Colleague {
+    name: string;
+    department: string;
+    contact: {
+        email: string,
+        extension: number
+    }
+}
 const friend1: Friend = {
     name: "Paul Fleming",
     phone: "087-12345",
@@ -20,7 +27,7 @@ const friend1: Friend = {
   console.log(friends[1]);
   
   //   -------------------
-  const colleague1 = {
+  const colleague1: Colleague = {
     name: "Ralph Graham",
     department: "Engineering",
     contact: {
@@ -29,7 +36,7 @@ const friend1: Friend = {
     },
   };
   
-  const colleague2 = {
+  const colleague2: Colleague = {
     name: "Patti Burke",
     department: "Finance",
     contact: {
