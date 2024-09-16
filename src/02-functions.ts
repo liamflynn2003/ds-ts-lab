@@ -57,13 +57,13 @@ function sortColleagues(
     const sorted = colleagues.sort(sorter);
     const fullResult =  sorted.map((ce) => ({ name: ce.name, email: ce.contact.email }));
     return fullResult.slice(0,end)
-  }
-  // Test invocations
-  // console.log(sortColleagues(colleagues.current, (a, b) => (a.contact.extension - b.contact.extension),3));
-  // console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length),1));
-  // console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length)));
+}
+// Test invocations
+// console.log(sortColleagues(colleagues.current, (a, b) => (a.contact.extension - b.contact.extension),3));
+// console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length),1));
+// console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length)));
 
-  function findFriends(friends: Friend[], criterion: (friend: Friend) => boolean): string[] {
+function findFriends(friends: Friend[], criterion: (friend: Friend) => boolean): string[] {
     // Filter friends based on the callback function and map to names
     return friends.filter(criterion).map(friend => friend.name);
 }
@@ -75,3 +75,4 @@ function addInterest(friend: Friend, interest: string) {
     return friend.interests
 }
 console.log(addInterest(friends[0], 'Politics'))
+
