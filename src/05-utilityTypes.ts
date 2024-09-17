@@ -38,7 +38,10 @@ function secureFindFriends(
   }
   console.log(generateEventPass(colleagues.current[0]));
   console.log(colleagues)
-
+  // Intersection Function Code 
+  console.log(updateFriend(friends[0], {
+    name: 'Ralph Graham',
+  }))
 function intersection(
     friends: Friend[],
     colleagues: Colleague[]
