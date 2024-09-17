@@ -33,7 +33,6 @@ import {
       extension: 125,
     },
   };
-
   function makeBuddyList(
     name: string,
     buddies: Buddy[],
